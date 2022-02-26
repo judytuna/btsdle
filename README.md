@@ -1,3 +1,20 @@
+# BTSdle
+
+Forked from https://github.com/cwackerfuss/react-wordle !
+
+Color overrides:
+- gray --> purple
+- green (key correct) --> borahae purple
+- yellow (key present) --> orange for PTD/butter?
+
+Colors I left alone:
+- white
+- indigo (buttons)
+- slate (key)
+- orange (key correct isHighContrast)
+- cyan (key present isHighContrast)
+
+
 # React Wordle
 
 This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.

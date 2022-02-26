@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
+        Guess the BTS-related word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
 
@@ -18,55 +18,66 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="O"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
         <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="U" />
+        <Cell value="L" />
+        <Cell value="8" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        The letter O is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="O" />
+        <Cell value="R" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="U"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="L" />
+        <Cell value="8" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        The letter U is in the word but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="O" />
+        <Cell value="R" />
+        <Cell value="U" />
+        <Cell isRevealing={true} isCompleted={true} value="L" status="absent" />
+        <Cell value="8" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        The letter L is not in the word in any spot.
       </p>
 
+      <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+        There won't be numbers in the word list. I was just using ORUL8,2? as an example!
+      </p>
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         This is an open source version of the word guessing game we all know and
-        love -{' '}
+        love, with a Bangtan twist -{' '}
+        <a
+          href="https://github.com/judytuna/btsdle"
+          className="underline font-bold"
+        >
+          check out the code for BTSdle here
+        </a>{' '}
+        and see the{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
-        </a>{' '}
+          original code here
+        </a>.{' '}
       </p>
+      <p>💜</p>
     </BaseModal>
   )
 }

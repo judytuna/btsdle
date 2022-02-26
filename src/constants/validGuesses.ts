@@ -12971,4 +12971,12 @@ export const VALID_GUESSES = [
   'zygon',
   'zymes',
   'zymic',
+
+  'korea',
+  'seoul',
+  'daegu',
+  'busan',
+  'jimin',
+  'jhope',
+  'skool',
 ]
