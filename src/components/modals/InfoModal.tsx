@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
+        Guess the Starcraft-related word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
 
@@ -18,55 +18,64 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="P"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
         <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="O" />
+        <Cell value="B" />
+        <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        The letter P is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="R" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="O"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
-      </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
+        <Cell value="B" />
         <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        The letter O is in the word but in the wrong spot.
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="P" />
+        <Cell value="R" />
+        <Cell value="O" />
+        <Cell isRevealing={true} isCompleted={true} value="B" status="absent" />
+        <Cell value="E" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        The letter B is not in the word in any spot.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        This is a lovingly Starcraftified flavor of an open source version of the word guessing game we all know and
+        love.{' '}
+        Check out the{' '}
+        <a
+          href="https://github.com/justanotherflamingo/starcraftle"
+          className="underline font-bold"
+        >
+          Starcraftle code here
+        </a>{' '}
+        and the{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
-        </a>{' '}
+          original code here
+        </a>!{' '}
       </p>
+      <p>💙</p>
     </BaseModal>
   )
 }
