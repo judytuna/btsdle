@@ -1,3 +1,7 @@
+# Starcraftle
+
+Forked from https://github.com/cwackerfuss/react-wordle <3
+
 # React Wordle
 
 This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
